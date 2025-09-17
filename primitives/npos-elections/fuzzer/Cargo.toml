@@ -1,0 +1,44 @@
+[package]
+name = "sp-npos-elections-fuzzer"
+version = "2.0.0-alpha.5"
+authors = ["Parity Technologies <admin@parity.io>"]
+edition = "2018"
+license = "Apache-2.0"
+homepage = "https://substrate.dev"
+repository = "https://github.com/paritytech/substrate/"
+description = "Fuzzer for phragmén implementation."
+documentation = "https://docs.rs/sp-npos-elections-fuzzer"
+publish = false
+
+[package.metadata.docs.rs]
+targets = ["x86_64-unknown-linux-gnu"]
+
+[dependencies]
+codec = { package = "parity-scale-codec", version = "2.0.0", default-features = false, features = ["derive"] }
+honggfuzz = "0.5"
+rand = { version = "0.7.3", features = ["std", "small_rng"] }
+sp-arithmetic = { version = "3.0.0", path = "../../arithmetic" }
+sp-npos-elections = { version = "3.0.0", path = ".." }
+sp-runtime = { version = "3.0.0", path = "../../runtime" }
+sp-std = { version = "3.0.0", path = "../../std" }
+structopt = "0.3.21"
+
+[[bin]]
+name = "reduce"
+path = "src/reduce.rs"
+
+[[bin]]
+name = "phragmen_balancing"
+path = "src/phragmen_balancing.rs"
+
+[[bin]]
+name = "phragmms_balancing"
+path = "src/phragmms_balancing.rs"
+
+[[bin]]
+name = "compact"
+path = "src/compact.rs"
+
+[[bin]]
+name = "phragmen_pjr"
+path = "src/phragmen_pjr.rs"

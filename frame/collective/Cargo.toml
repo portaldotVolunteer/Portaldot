@@ -1,0 +1,47 @@
+[package]
+name = "pallet-collective"
+version = "3.0.0"
+authors = ["Parity Technologies <admin@parity.io>"]
+edition = "2018"
+license = "Apache-2.0"
+homepage = "https://substrate.dev"
+repository = "https://github.com/paritytech/substrate/"
+description = "Collective system: Members of a set of account IDs can make their collective feelings known through dispatched calls from one of two specialized origins."
+readme = "README.md"
+
+[package.metadata.docs.rs]
+targets = ["x86_64-unknown-linux-gnu"]
+
+[dependencies]
+codec = { package = "parity-scale-codec", version = "2.0.0", default-features = false, features = ["derive"] }
+sp-core = { version = "3.0.0", default-features = false, path = "../../primitives/core" }
+sp-std = { version = "3.0.0", default-features = false, path = "../../primitives/std" }
+sp-io = { version = "3.0.0", default-features = false, path = "../../primitives/io" }
+sp-runtime = { version = "3.0.0", default-features = false, path = "../../primitives/runtime" }
+frame-benchmarking = { version = "3.1.0", default-features = false, path = "../benchmarking", optional = true }
+frame-support = { version = "3.0.0", default-features = false, path = "../support" }
+frame-system = { version = "3.0.0", default-features = false, path = "../system" }
+log = { version = "0.4.14", default-features = false }
+
+[dev-dependencies]
+hex-literal = "0.3.1"
+pallet-balances = { version = "3.0.0", path = "../balances" }
+
+[features]
+default = ["std"]
+std = [
+	"codec/std",
+	"sp-core/std",
+	"sp-std/std",
+	"sp-io/std",
+	"frame-support/std",
+	"sp-runtime/std",
+	"frame-system/std",
+	"log/std",
+]
+runtime-benchmarks = [
+	"frame-benchmarking",
+	"sp-runtime/runtime-benchmarks",
+	"frame-system/runtime-benchmarks",
+]
+try-runtime = ["frame-support/try-runtime"]
