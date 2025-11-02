@@ -2,7 +2,7 @@
 
 🚀Homepage: [www.portaldot.io](https://www.portaldot.io)
 
-🚀Developer Platform:[portaldot-dev.readthedocs.io](https://portaldot-dev.readthedocs.io)
+🚀Developer Platform:[portaldot-dev](https://portaldot-dev.readthedocs.io)
 
 <img src=".\icon\portaldot.jpg" width = 120 height = 120>
 
