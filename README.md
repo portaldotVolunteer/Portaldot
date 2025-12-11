@@ -4,7 +4,7 @@
 
 🚀Developer Platform:[portaldot-dev](https://portaldot-dev.readthedocs.io)
 
-<img src=".\icon\portaldot.jpg" width = 120 height = 120>
+<img src="Portaldot.png" width =120 height =120>
 
 🚀Next-generation Layer0 meta-protocol, the core infrastructure for green and trusted digital civilization in Web 3.0.
 
