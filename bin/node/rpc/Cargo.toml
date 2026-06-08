@@ -1,11 +1,11 @@
 [package]
 name = "node-rpc"
 version = "2.0.0"
-authors = ["Parity Technologies <admin@parity.io>"]
+authors = ["Portaldot Contributors"]
 edition = "2018"
 license = "Apache-2.0"
-homepage = "https://substrate.dev"
-repository = "https://github.com/paritytech/substrate/"
+homepage = "https://www.portaldot.io"
+repository = "https://github.com/portaldotVolunteer/Portaldot"
 
 [package.metadata.docs.rs]
 targets = ["x86_64-unknown-linux-gnu"]
