@@ -1,14 +1,14 @@
 [package]
 name = "node-cli"
 version = "2.0.0"
-authors = ["Parity Technologies <admin@parity.io>"]
-description = "Generic Substrate node implementation in Rust."
+authors = ["Portaldot Contributors"]
+description = "Portaldot node implementation in Rust."
 build = "build.rs"
 edition = "2018"
 license = "GPL-3.0-or-later WITH Classpath-exception-2.0"
 default-run = "portaldot"
-homepage = "https://substrate.dev"
-repository = "https://github.com/paritytech/substrate/"
+homepage = "https://www.portaldot.io"
+repository = "https://github.com/portaldotVolunteer/Portaldot"
 
 [package.metadata.wasm-pack.profile.release]
 # `wasm-opt` has some problems on linux, see
@@ -19,10 +19,10 @@ wasm-opt = false
 targets = ["x86_64-unknown-linux-gnu"]
 
 [badges]
-travis-ci = { repository = "paritytech/substrate" }
+travis-ci = { repository = "portaldotVolunteer/Portaldot" }
 maintenance = { status = "actively-developed" }
-is-it-maintained-issue-resolution = { repository = "paritytech/substrate" }
-is-it-maintained-open-issues = { repository = "paritytech/substrate" }
+is-it-maintained-issue-resolution = { repository = "portaldotVolunteer/Portaldot" }
+is-it-maintained-open-issues = { repository = "portaldotVolunteer/Portaldot" }
 
 [[bin]]
 name = "portaldot"
