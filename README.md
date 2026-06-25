@@ -1,66 +1,34 @@
 # Portaldot
 
-Portaldot is a Substrate-based blockchain project focused on building a Layer0 protocol and public chain infrastructure for Web3 applications.
+🚀Homepage: [www.portaldot.io](https://www.portaldot.io)
 
-## Repository Status
+🚀Developer Platform:[portaldot-dev](https://portaldot-dev.readthedocs.io)
 
-This repository currently contains the chain node, runtime, and a vendored Substrate codebase snapshot used by Portaldot.
+<img src="Portaldot.png" width =120 height =120>
 
-Known maintenance gaps:
+🚀Next-generation Layer0 meta-protocol, the core infrastructure for green and trusted digital civilization in Web 3.0.
 
-- The codebase is based on an older Substrate generation and will require a broader SDK migration.
-- The checked-in chain configuration includes both development/staging defaults and a raw mainnet chain spec.
-- Modern CI, security policy, and pinned toolchain metadata are being added incrementally.
+## Introduction
+***
+Portaldot is a new generation of decentralized Layer0-level public chain, which aims to build a high-performance global blockchain application network service system for physical industries and become the core infrastructure of Web3.0 green and trusted digital civilization.
 
-## Links
+It's a Substrate based blockchain developed by the contributions of the world's top experts, geeks, and volunteers, this is a tribute to the pure and ultimate spirit of decentralization!
 
-- Homepage: <https://www.portaldot.io>
-- Developer docs: <https://portaldot-dev.readthedocs.io>
+## Vision: Build a green and reliable autonomous digital civilization
+***
+The long-term vision of Portaldot is to build a super ecology of "blockchain +" and open the "era of great navigation" for blockchain thinking, blockchain entities and financial all-round empowerment industries.It aims to establish a new type of production relations as a DAO and develop an industrial cooperative economic community.
 
-## Quick Start
+Portaldot allows for the secure transmission of any type of data between any type of blockchain protocols, unlocking a vast array of real-world application scenarios. 
+By combining the best features from multiple specialized blockchains, Portaldot paves the way for a new decentralized market and provides more equitable service support for a wide range of decentralized applications.
 
-Clone the repository and build the node binary:
+## Contribution
+***
+Thank you for considering to help out with the source code! We welcome contributions from anyone on the internet, and are grateful for even the smallest of fixes!
 
-```bash
-git clone https://github.com/portaldotVolunteer/Portaldot.git
-cd Portaldot
-cargo build --release -p node-cli
-```
+If you'd like to contribute to Portaldot, please fork, fix, commit and send a pull request for the maintainers to review and merge into the main code base. If you wish to submit more complex changes though, please check up with the core devs first to ensure those changes are in line with the general philosophy of the project and/or get some early feedback which can make both your efforts much lighter as well as our review and merge procedures quick and simple.
 
-Run a local development chain:
-
-```bash
-./target/release/portaldot --dev
-```
-
-Use the checked-in raw chain spec when you need to inspect or boot the main network configuration:
-
-```bash
-./target/release/portaldot --chain ./pot_mainnet_spec_raw.json
-```
-
-## Chain Configuration Notes
-
-- `--chain portaldot` currently resolves to the built-in Portaldot chain spec compiled into the node.
-- `pot_mainnet_spec_raw.json` contains a separate raw mainnet chain specification.
-- Review both before using this repository for production node deployment.
-
-## Development Notes
-
-- The project currently targets an older Rust/Substrate stack. A pinned toolchain file is included to make local builds more reproducible.
-- Some crates still carry upstream Substrate metadata. Cleanup is ongoing.
-- If you are making runtime or chain spec changes, validate them against your deployment environment before release.
-
-## Contributing
-
-Contributions are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for development and review expectations.
-
-## Security
-
-Please report security issues privately as described in [SECURITY.md](SECURITY.md).
-
-## License
-
+## Lisence
+***
 Portaldot is released under the terms of the Apache 2.0 license.
 
-See [LICENSE-APACHE2](LICENSE-APACHE2) for details.
+See [Apache 2.0](LICENSE-APACHE2) for more information.
